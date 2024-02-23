@@ -1,0 +1,13 @@
+<h1>Search results for <?= $keywords ?> </h1>
+<section id="search" class="row">
+  <?php 
+  foreach($posts as $article) :?>
+  <div class="card" style="width: 18rem;">
+  <img src="<?= $article['image'] ?>" class="card-img-top" alt="<?= $article['title'] ?>">
+  <div class="card-body">
+    <h5 class="card-title"><?= $article['title'] ?></h5>
+    <p class="card-text"><?= $article['title'] ?></p>
+  </div>
+</div>
+<?php endforeach;?> 
+</section>
